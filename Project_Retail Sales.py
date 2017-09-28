@@ -2,7 +2,7 @@
 import csv
 
 # read csv file
-with open('salesvalue_csv', 'r') as salesval:
+with open('salesvalue_csv.csv', 'r') as salesval:
     csv_reader = csv.reader(salesval)
 
     for row in csv_reader:
@@ -23,5 +23,8 @@ with open('salesvalue_csv', 'r') as salesval:
 # graph 2: line graph
 # add line graph for each brand (each line corresponds to one brand)
 # overlay graph 2 on graph 1
+
+#TODO create a command line interface that allows you to type in brand names and show graphs for the brands you want to
+# compare. You have to show the legend for each graph
 
 
