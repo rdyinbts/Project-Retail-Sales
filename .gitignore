@@ -100,3 +100,6 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# all csv files
+*.csv
