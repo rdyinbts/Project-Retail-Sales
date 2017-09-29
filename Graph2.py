@@ -2,8 +2,6 @@
 #which brand sold the most? in value and volume
 #which month did that brand get highest sales? in terms of value and volume
 
-
-
 import numpy as np
 import matplotlib.pyplot as plt
 import csv
@@ -19,11 +17,13 @@ y = range(8)
 
 # plot stacked bar graph
 width = 0.45
-index = np.arange(11) + 0.75
+index = np.arange(8) + 0.75
 
-plt.plot
 
-figure = plt.plot
-fig, ax = plt.subplot(1, 1)
+figure = plt.plot()
+ax = plt.subplot(1, 2, 1)
+fig = plt.subplot(1, 2, 2)
 blend = ax.bar(index, val[0], width, color="blue")
 cpuro = ax.bar(index, val[1], width, bottom=val[0], color="brown")
+
+plt.show()
